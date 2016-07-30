@@ -1,0 +1,348 @@
+﻿{
+    "10": [
+        {
+            "PackageName": "com.google.android.gsf",
+            "FileSource": "GoogleServicesFramework-10.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleServicesFramework.apk"
+        },
+        {
+            "PackageName": "com.google.android.syncadapters.calendar",
+            "FileSource": "GoogleCalendarSyncAdapter-10.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleCalendarSyncAdapter.apk"
+        },
+        {
+            "PackageName": "com.google.android.syncadapters.contacts",
+            "FileSource": "GoogleContactsSyncAdapter-10.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleContactsSyncAdapter.apk"
+        },
+        {
+            "PackageName": "com.android.vending",
+            "FileSource": "Phonesky.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Vending.apk"
+        },
+        {
+            "PackageName": "com.google.android.gm",
+            "FileSource": "Gmail.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Gmail.apk"
+        },
+        {
+            "PackageName": "com.google.android.talk",
+            "FileSource": "Hangouts.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Hangouts.apk"
+        }
+    ],
+    "14": [
+        {
+            "PackageName": "com.google.android.gsf",
+            "FileSource": "GoogleServicesFramework-14.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleServicesFramework.apk"
+        },
+        {
+            "PackageName": "com.google.android.gsf.login",
+            "FileSource": "GoogleLoginService-14.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleLoginService.apk"
+        },
+        {
+            "PackageName": "com.google.android.syncadapters.calendar",
+            "FileSource": "GoogleCalendarSyncAdapter-14.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleCalendarSyncAdapter.apk"
+        },
+        {
+            "PackageName": "com.google.android.syncadapters.contacts",
+            "FileSource": "GoogleContactsSyncAdapter-14.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleContactsSyncAdapter.apk"
+        },
+        {
+            "PackageName": "com.android.vending",
+            "FileSource": "Phonesky.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Phonesky.apk"
+        },
+        {
+            "PackageName": "com.google.android.gm",
+            "FileSource": "Gmail2.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Gmail2.apk"
+        },
+        {
+            "PackageName": "com.google.android.talk",
+            "FileSource": "Hangouts.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Hangouts.apk"
+        }
+    ],
+    "15": [
+        {
+            "PackageName": "com.google.android.gsf",
+            "FileSource": "GoogleServicesFramework-14.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleServicesFramework.apk"
+        },
+        {
+            "PackageName": "com.google.android.gsf.login",
+            "FileSource": "GoogleLoginService-14.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleLoginService.apk"
+        },
+        {
+            "PackageName": "com.google.android.syncadapters.calendar",
+            "FileSource": "GoogleCalendarSyncAdapter-14.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleCalendarSyncAdapter.apk"
+        },
+        {
+            "PackageName": "com.google.android.syncadapters.contacts",
+            "FileSource": "GoogleContactsSyncAdapter-14.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleContactsSyncAdapter.apk"
+        },
+        {
+            "PackageName": "com.android.vending",
+            "FileSource": "Phonesky.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Phonesky.apk"
+        },
+        {
+            "PackageName": "com.google.android.gm",
+            "FileSource": "Gmail2.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Gmail2.apk"
+        },
+        {
+            "PackageName": "com.google.android.talk",
+            "FileSource": "Hangouts.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Hangouts.apk"
+        }
+    ],
+    "16": [
+        {
+            "PackageName": "com.google.android.gsf",
+            "FileSource": "GoogleServicesFramework-16.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleServicesFramework.apk"
+        },
+        {
+            "PackageName": "com.google.android.gsf.login",
+            "FileSource": "GoogleLoginService-16.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleLoginService.apk"
+        },
+        {
+            "PackageName": "com.google.android.syncadapters.calendar",
+            "FileSource": "GoogleCalendarSyncAdapter-16.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleCalendarSyncAdapter.apk"
+        },
+        {
+            "PackageName": "com.google.android.syncadapters.contacts",
+            "FileSource": "GoogleContactsSyncAdapter-16.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleContactsSyncAdapter.apk"
+        },
+        {
+            "PackageName": "com.android.vending",
+            "FileSource": "Phonesky.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Phonesky.apk"
+        },
+        {
+            "PackageName": "com.google.android.gm",
+            "FileSource": "Gmail2.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Gmail2.apk"
+        },
+        {
+            "PackageName": "com.google.android.talk",
+            "FileSource": "Hangouts.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Hangouts.apk"
+        }
+    ],
+    "17": [
+        {
+            "PackageName": "com.google.android.gsf",
+            "FileSource": "GoogleServicesFramework-17.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleServicesFramework.apk"
+        },
+        {
+            "PackageName": "com.google.android.gsf.login",
+            "FileSource": "GoogleLoginService-17.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleLoginService.apk"
+        },
+        {
+            "PackageName": "com.google.android.syncadapters.calendar",
+            "FileSource": "GoogleCalendarSyncAdapter-17.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleCalendarSyncAdapter.apk"
+        },
+        {
+            "PackageName": "com.google.android.syncadapters.contacts",
+            "FileSource": "GoogleContactsSyncAdapter-17.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleContactsSyncAdapter.apk"
+        },
+        {
+            "PackageName": "com.android.vending",
+            "FileSource": "Phonesky.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Phonesky.apk"
+        },
+        {
+            "PackageName": "com.google.android.gm",
+            "FileSource": "Gmail2.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Gmail2.apk"
+        },
+        {
+            "PackageName": "com.google.android.talk",
+            "FileSource": "Hangouts.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Hangouts.apk"
+        }
+    ],
+    "18": [
+        {
+            "PackageName": "com.google.android.gsf",
+            "FileSource": "GoogleServicesFramework-18.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleServicesFramework.apk"
+        },
+        {
+            "PackageName": "com.google.android.gsf.login",
+            "FileSource": "GoogleLoginService-18.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleLoginService.apk"
+        },
+        {
+            "PackageName": "com.google.android.syncadapters.calendar",
+            "FileSource": "GoogleCalendarSyncAdapter-18.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleCalendarSyncAdapter.apk"
+        },
+        {
+            "PackageName": "com.google.android.syncadapters.contacts",
+            "FileSource": "GoogleContactsSyncAdapter-18.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleContactsSyncAdapter.apk"
+        },
+        {
+            "PackageName": "com.android.vending",
+            "FileSource": "Phonesky.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Phonesky.apk"
+        },
+        {
+            "PackageName": "com.google.android.gm",
+            "FileSource": "Gmail2.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Gmail2.apk"
+        },
+        {
+            "PackageName": "com.google.android.talk",
+            "FileSource": "Hangouts.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Hangouts.apk"
+        }
+    ],
+    "19": [
+        {
+            "PackageName": "com.google.android.gsf",
+            "FileSource": "GoogleServicesFramework-19.apk",
+            "DirTarget": "/system/priv-app",
+            "FileTarget": "GoogleServicesFramework.apk"
+        },
+        {
+            "PackageName": "com.google.android.gsf.login",
+            "FileSource": "GoogleLoginService-19.apk",
+            "DirTarget": "/system/priv-app",
+            "FileTarget": "GoogleLoginService.apk"
+        },
+        {
+            "PackageName": "com.google.android.syncadapters.calendar",
+            "FileSource": "GoogleCalendarSyncAdapter-19.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleCalendarSyncAdapter.apk"
+        },
+        {
+            "PackageName": "com.google.android.syncadapters.contacts",
+            "FileSource": "GoogleContactsSyncAdapter-19.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleContactsSyncAdapter.apk"
+        },
+        {
+            "PackageName": "com.android.vending",
+            "FileSource": "Phonesky.apk",
+            "DirTarget": "/system/priv-app",
+            "FileTarget": "Phonesky.apk"
+        },
+        {
+            "PackageName": "com.google.android.gm",
+            "FileSource": "Gmail2.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Gmail2.apk"
+        },
+        {
+            "PackageName": "com.google.android.talk",
+            "FileSource": "Hangouts.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Hangouts.apk"
+        }
+    ],
+    "20": [
+        {
+            "PackageName": "com.google.android.gsf",
+            "FileSource": "GoogleServicesFramework-19.apk",
+            "DirTarget": "/system/priv-app",
+            "FileTarget": "GoogleServicesFramework.apk"
+        },
+        {
+            "PackageName": "com.google.android.gsf.login",
+            "FileSource": "GoogleLoginService-19.apk",
+            "DirTarget": "/system/priv-app",
+            "FileTarget": "GoogleLoginService.apk"
+        },
+        {
+            "PackageName": "com.google.android.syncadapters.calendar",
+            "FileSource": "GoogleCalendarSyncAdapter-19.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleCalendarSyncAdapter.apk"
+        },
+        {
+            "PackageName": "com.google.android.syncadapters.contacts",
+            "FileSource": "GoogleContactsSyncAdapter-19.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "GoogleContactsSyncAdapter.apk"
+        },
+        {
+            "PackageName": "com.android.vending",
+            "FileSource": "Phonesky.apk",
+            "DirTarget": "/system/priv-app",
+            "FileTarget": "Phonesky.apk"
+        },
+        {
+            "PackageName": "com.google.android.gm",
+            "FileSource": "Gmail2.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Gmail2.apk"
+        },
+        {
+            "PackageName": "com.google.android.talk",
+            "FileSource": "Hangouts.apk",
+            "DirTarget": "/system/app",
+            "FileTarget": "Hangouts.apk"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+﻿Version=5.02
+NumberOfModules=0
+Build1=Default,com.myanmarunicorn.easygapps
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="14"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~SetApplicationAttribute(android:theme, "@android:style/Theme.Holo")~\n~~\n~AddPermission("android.permission.ACCESS_SUPERUSER")~\n~'End of default text.~\n~
+IconFile=
+NumberOfFiles=31
+File1=background.png
+File2=busybox
+File3=Gmail.apk
+File4=Gmail2.apk
+File5=GoogleCalendarSyncAdapter-10.apk
+File6=GoogleCalendarSyncAdapter-14.apk
+File7=GoogleCalendarSyncAdapter-16.apk
+File8=GoogleCalendarSyncAdapter-17.apk
+File9=GoogleCalendarSyncAdapter-18.apk
+File10=GoogleCalendarSyncAdapter-19.apk
+File11=GoogleContactsSyncAdapter-10.apk
+File12=GoogleContactsSyncAdapter-14.apk
+File13=GoogleContactsSyncAdapter-16.apk
+File14=GoogleContactsSyncAdapter-17.apk
+File15=GoogleContactsSyncAdapter-18.apk
+File16=GoogleContactsSyncAdapter-19.apk
+File17=GoogleLoginService-14.apk
+File18=GoogleLoginService-16.apk
+File19=GoogleLoginService-17.apk
+File20=GoogleLoginService-18.apk
+File21=GoogleLoginService-19.apk
+File22=GoogleServicesFramework-10.apk
+File23=GoogleServicesFramework-14.apk
+File24=GoogleServicesFramework-16.apk
+File25=GoogleServicesFramework-17.apk
+File26=GoogleServicesFramework-18.apk
+File27=GoogleServicesFramework-19.apk
+File28=Hangouts.apk
+File29=Main.bal
+File30=packages.json
+File31=Phonesky.apk
+NumberOfLibraries=4
+Library1=core
+Library2=superuser
+Library3=phone
+Library4=json
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: Easy GApps
+	#VersionCode: 1
+	#VersionName: 1.0
+	#SupportedOrientations: portrait
+	#CanInstallToExternalStorage: False
+#End Region
+
+#Region  Activity Attributes 
+	#FullScreen: False
+	#IncludeTitle: True
+#End Region
+
+Sub Process_Globals
+
+End Sub
+
+Sub Globals
+
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	Activity.LoadLayout("Main")
+End Sub
+
+Sub Activity_Resume
+
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
+
+Sub btnInstall_Click
+	Dim su As SuShell
+	If su.DeviceRooted Then
+		Dim parser As JSONParser
+		parser.Initialize(File.ReadString(File.DirAssets, "packages.json"))
+		Dim root As Map = parser.NextObject
+		Dim p As Phone
+		Dim APILevel As String = p.SdkVersion
+		Dim Packages As List = root.Get(APILevel)
+		If Packages.IsInitialized Then
+			ProgressDialogShow2("Installing...", False)
+			su.ExecuteMultiple(Array As String("chmod 0777 /data/local/tmp", "rm -r /data/local/tmp/*")).WaitForCompletion
+			File.Copy(File.DirAssets, "busybox", "/data/local/tmp", "busybox")
+			Dim TextWriter As TextWriter
+			TextWriter.Initialize(File.OpenOutput("/data/local/tmp", "install.sh", True))
+			TextWriter.WriteList(Array As String("export PATH=/data/local/tmp:$PATH", "busybox mount -o remount,rw /system"))
+			For Each colPackage As Map In Packages
+				Dim PackageName As String = colPackage.Get("PackageName")
+				Dim pm As PackageManager
+				Dim InstalledPackages As List = pm.GetInstalledPackages
+				If InstalledPackages.IndexOf(PackageName) = -1 Then
+					Dim FileSource As String = colPackage.Get("FileSource")
+					Dim DirTarget As String = colPackage.Get("DirTarget")
+					Dim FileTarget As String = colPackage.Get("FileTarget")
+					File.Copy(File.DirAssets, FileSource, "/data/local/tmp", FileTarget)
+					TextWriter.WriteList(Array As String("cat /data/local/tmp/" & FileTarget & " > " & DirTarget & "/" & FileTarget, "chown root.root " & DirTarget & "/" & FileTarget, "chmod 0644 " & DirTarget & "/" & FileTarget))
+				End If
+			Next
+			TextWriter.Close
+			su.ExecuteMultiple(Array As String("chmod 0755 /data/local/tmp/busybox", "chmod 0755 /data/local/tmp/install.sh", "sh /data/local/tmp/install.sh", "rm -r /data/local/tmp/*", "reboot")).WaitForCompletion
+			ProgressDialogHide
+		Else
+			Msgbox("Device Is Not Supported.", "Error")
+		End If
+	Else
+		Msgbox("Root Access Is Required.", "Easy GApps")
+	End If
+End Sub
